@@ -1,0 +1,9 @@
+<div>
+  <div style="display: block">
+    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [legend]="doughnutChartLegend"
+      [chartType]="doughnutChartType" [options]="doughnutChartOptions"
+      [colors]="[{backgroundColor: ['rgba(235, 121, 235, 1)', 'rgb(30, 136, 229)', '#06d79c', 'rgb(236, 239, 241)']}]"
+      (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+    </canvas>
+  </div>
+</div>
